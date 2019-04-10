@@ -1,13 +1,13 @@
 # spring-integration-sftp-dynamic-sessionfactory
 
-The main goal of this project is creating dynamic session factory for sftp connections in spring integration,
-and build with Spring Boot,Spring Integration,Spring webService and Maven.
+The main goal of this project is creating dynamic session factory for sftp connections using spring integration,
+and build with Spring Boot, Maven, Spring Integration and Spring webService.
 
-this a webservice that get a String and saved it as a File into specific Host through Sftp connection.
+This is a webservice that get a String and saved it as a File into specific Host through Sftp connection.
 
-when a new request come to webservice, it looking for existing session factory with 'username@Host:Password' key.
+When a new request come to webservice, it looking for existing session factory with 'username@Host:Password' key.
 if session factory with this properties does not found, it create a new session factory with 'username@Host:Password' key
-and add to "FactoryLocator" in "DelegationSessionFactory".
+and add to `FactoryLocator` in `DelegationSessionFactory`.
 
 # Objects:
 
@@ -21,4 +21,4 @@ and add to "FactoryLocator" in "DelegationSessionFactory".
 
 **Response parameters:** 
 `resCode`: result code of the operation
-`message`: message of the result 
+`message`: message of the result
